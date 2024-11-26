@@ -1,4 +1,4 @@
-const axios = require('axios');
+Xconst axios = require('axios');
 const calculateRSI = require('./rsiCalculator');  // Import the RSI function
 
 // Fetch Solana price
