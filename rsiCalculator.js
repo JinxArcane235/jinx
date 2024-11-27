@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 function calculateRSI(data) {
     let gains = 0, losses = 0;
 
@@ -14,6 +15,8 @@ function calculateRSI(data) {
 
     return 100 - (100 / (1 + rs));
 =======
+=======
+>>>>>>> 7fbbe5b (Fixed Solana price fetcher and RSI calculation logic)
 // rsiCalculator.js
 
 // Calculate the RSI (Relative Strength Index) for a set of prices
@@ -38,7 +41,10 @@ function calculateRSI(prices, period = 14) {
     const rsi = 100 - (100 / (1 + rs));
     
     return rsi;
+<<<<<<< HEAD
 >>>>>>> 9b0a8245ffc949b7b0378c3c9d9822497cb2fb3b
+=======
+>>>>>>> 7fbbe5b (Fixed Solana price fetcher and RSI calculation logic)
 }
 
 module.exports = calculateRSI;

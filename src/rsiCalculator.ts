@@ -1,21 +1,4 @@
-const axios = require('axios');
-const calculateRSI = require('./rsiCalculator');  // Import the RSI calculation function
-
-// Fetch Solana price
-async function fetchSolanaPrice() {
-  try {
-    const response = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd');
-    return response.data.solana.usd;
-  } catch (error) {
-    console.error("Error fetching Solana price:", error);
-    return null;
-  }
-}
-
-module.exports = { fetchSolanaPrice };
-
-// Calculate RSI (Relative Strength Index)
-function calculateRSI(prices, period = 14) {
+export function calculateRSI(prices: number[], period = 14): number {
   let gains = 0;
   let losses = 0;
 
