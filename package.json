@@ -21,4 +21,25 @@
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.16.0"
   }
+  {
+  "name": "solana-rsi-tracker",
+  "version": "1.0.0",
+  "description": "Solana price and RSI tracker",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node solanaTracker.ts"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "technicalindicators": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "ts-node": "^10.4.0",
+    "@types/node": "^16.11.7"
+  },
+  "author": "DeadGhoost",
+  "license": "ISC"
+}
+
 }
